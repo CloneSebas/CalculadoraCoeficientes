@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Especial</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Coeficiente</h1>
+        <form id="calculator-form">
+            <label for="tco">Total de Créditos Obtenidos</label>
+            <input type="number" id="tco" name="tco" required>
+
+            <label for="tcc">Total de Créditos de la Carrera</label>
+            <input type="number" id="tcc" name="tcc" required>
+
+            <label for="promedio">Promedio</label>
+            <input type="number" id="promedio" name="promedio" required>
+
+            <button type="button" onclick="calculate()">Calcular</button>
+        </form>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
